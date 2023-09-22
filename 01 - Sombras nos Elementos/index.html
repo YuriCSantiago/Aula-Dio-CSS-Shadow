@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sombras</title>
+    <style>
+        #div1 {
+            width: 200px;
+            height: 200px;
+            border: 10px solid red;
+            margin: 20px auto;
+            background: #fa8072;
+
+            box-shadow: 30px 30px 20px rgb(194, 65, 9);
+            /*Terceiro valor(20px) da um efeito de desfoque*/
+            /*inset no inicio da uma sombra afundada(sombra interna)*/
+        }
+
+        #div2 {
+            width: 200px;
+            height: 200px;
+            border: 10px solid red;
+            margin: 20px auto;
+            background: #fa8072;
+
+            box-shadow: inset 30px 30px 30px blue, 20px 20px ;
+        }
+
+        img {
+            width: 200px;
+            height: 200px;
+            margin: 20px auto;
+            filter: drop-shadow(10px 10px 5px gray);
+            /*Efeito de sombra nas letras de imagem/ Deixar com fundo transparente*/
+
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Propriedade <code>box-shadow</code></h1>
+
+    <div id="div1"></div>
+    <div id="div2"></div>
+
+    <img src="img/atletico_mg_01-removebg-preview.png" alt="">
+</body>
+
+</html>
